@@ -12,10 +12,11 @@
     section { padding: 40px; max-width: 900px; margin: auto; }
     h2 { border-bottom: 2px solid #333; padding-bottom: 5px; }
     img.profile { width: 120px; border-radius: 50%; margin-bottom: 15px; }
-    .badge { height: 20px; vertical-align: middle; margin-right: 8px; }
+    .badge-row { display: flex; justify-content: center; align-items: center; gap: 40px; margin-bottom: 20px; }
+    .badge-row img { height: 500px; width: auto; }
+    footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
     .skills-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
     .skills-grid img { height: 48px; }
-    footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
     .btn-link { display: inline-block; padding: 10px 20px; margin: 10px 0; background: #005288; color: white; text-decoration: none; border-radius: 4px; }
   </style>
 </head>
@@ -43,9 +44,13 @@
 
 <section id="experience">
   <h2>Experience</h2>
+  <div class="badge-row">
+    <img src="China_Resources_Logo.png" alt="China Resources Group">
+    <img src="601066.SS_BIG-7a0bf063.png" alt="China Securities">
+  </div>
   <ul>
-    <li><img src="China_Resources_Logo.png" class="badge" alt="China Resources">Office Assistant, China Resources Group (Feb 2023 – Present)</li>
-    <li><img src="601066.SS_BIG-7a0bf063.png" class="badge" alt="China Securities">Project Assistant, China Securities Co., Ltd (Aug 2022 – Sep 2022)</li>
+    <li>China Resources Group — Office Assistant (Feb 2023 – Present)</li>
+    <li>China Securities Co., Ltd — Project Assistant (Aug 2022 – Sep 2022)</li>
   </ul>
 </section>
 
@@ -59,21 +64,24 @@
 
 <section id="skills">
   <h2>Skills</h2>
-  <p>Python, R, AMPL, Financial Modeling, Risk Management, NLP, Machine Learning, Microsoft Excel, Microsoft Word</p>
   <div class="skills-grid">
-    <img src="badges/python.png" alt="Python">
-    <img src="badges/r.png" alt="R">
-    <img src="badges/pandas.png" alt="Pandas">
-    <img src="badges/tensorflow.png" alt="TensorFlow">
-    <img src="badges/sql.png" alt="SQL">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/r/r-original.svg" alt="R">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" alt="Pandas">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
   </div>
 </section>
 
 <section id="education">
   <h2>Education</h2>
+  <div class="badge-row">
+    <img src="Lehigh_University_seal.png" alt="Lehigh University">
+    <img src="CTBU_logo.png" alt="CTBU">
+  </div>
   <ul>
-    <li><img src="Lehigh_University_seal.png" class="badge" alt="Lehigh">Lehigh University — MFE, 2023–2025</li>
-    <li><img src="CTBU_logo.png" class="badge" alt="CTBU">Chongqing Technology and Business University — BBA in Finance, 2018–2022</li>
+    <li>Lehigh University — MFE, 2023–2025</li>
+    <li>Chongqing Technology and Business University — BBA in Finance, 2018–2022</li>
   </ul>
 </section>
 
