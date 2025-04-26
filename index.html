@@ -1,102 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Junrong Zhang | Personal Website</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
-    header {
-      background: #333;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    .profile-pic {
-      width: 120px;
-      border-radius: 50%;
-      margin-top: 20px;
-    }
-    .content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 8px;
-    }
-    h1 {
-      text-align: center;
-      font-size: 28px;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .logo-row img {
-      height: 40px;
-      margin-right: 10px;
-      vertical-align: middle;
-    }
-    .resource-links a {
-      display: inline-block;
-      margin-right: 20px;
-      color: #0066cc;
-      text-decoration: none;
-    }
-    .resource-links a:hover {
-      text-decoration: underline;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    header { background: #005288; color: white; padding: 20px; text-align: center; }
+    nav { background: #222; display: flex; justify-content: center; gap: 20px; padding: 10px 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    section { padding: 40px; max-width: 900px; margin: auto; }
+    h2 { border-bottom: 2px solid #333; padding-bottom: 5px; }
+    img.profile { width: 120px; border-radius: 50%; margin-bottom: 15px; }
+    .badge { height: 20px; vertical-align: middle; margin-right: 8px; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; margin-top: 20px; }
+    .skills-grid img { height: 48px; }
+    footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
+    .btn-link { display: inline-block; padding: 10px 20px; margin: 10px 0; background: #005288; color: white; text-decoration: none; border-radius: 4px; }
   </style>
 </head>
 <body>
-  <header>
-    <img src="blob.png" alt="Profile Picture" class="profile-pic">
-    <h1>Junrong Zhang</h1>
-    <p>Email: zhangjunrong25@gmail.com</p>
-  </header>
-  <div class="content">
-    <div class="section">
-      <h2>About Me</h2>
-      <p>Master of Financial Engineering (MFE) student at Lehigh University. I’m passionate about applying data-driven methods, machine learning, and quantitative analysis to solve real-world financial problems.</p>
-      <p>Currently working on an NLP-based sentiment analysis model with Z-score filtering and macro-event detection logic.</p>
-    </div>
 
-    <div class="section">
-      <h2>Education</h2>
-      <div class="logo-row">
-        <img src="Lehigh_University_seal.png" alt="Lehigh University" />
-        <img src="CTBU_logo.png" alt="CTBU" />
-      </div>
-      <ul>
-        <li>Lehigh University, MFE, 2023–2025</li>
-        <li>Chongqing Technology and Business University, BBA in Finance, 2018–2022</li>
-      </ul>
-    </div>
+<header>
+  <img src="profile.jpg" alt="Junrong Zhang" class="profile">
+  <h1>Junrong Zhang</h1>
+  <p>Email: zhangjunrong25@gmail.com</p>
+</header>
 
-    <div class="section">
-      <h2>Work Experience</h2>
-      <div class="logo-row">
-        <img src="China_Resources_Logo.png" alt="China Resources" />
-        <img src="601066.SS_BIG-7a0bf063.png" alt="China Securities" />
-      </div>
-      <ul>
-        <li>China Resources Group — Office Assistant, Feb 2023 – Present</li>
-        <li>China Securities — Project Assistant, Aug 2022 – Sep 2022</li>
-      </ul>
-    </div>
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <div class="section">
-      <h2>Resources</h2>
-      <div class="resource-links">
-        <a href="resume.pdf" target="_blank">📄 Resume (PDF)</a>
-        <a href="intro-video.mp4" target="_blank">🎥 Introduction Video</a>
-      </div>
-    </div>
+<section id="about">
+  <h2>About Me</h2>
+  <p>Master of Financial Engineering (MFE) student at Lehigh University. Passionate about applying data-driven methods, machine learning, and quantitative analysis to real-world financial problems.</p>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <ul>
+    <li><img src="China_Resources_Logo.png" class="badge" alt="China Resources">Office Assistant, China Resources Group (Feb 2023 – Present)</li>
+    <li><img src="601066.SS_BIG-7a0bf063.png" class="badge" alt="China Securities">Project Assistant, China Securities Co., Ltd (Aug 2022 – Sep 2022)</li>
+  </ul>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <ul>
+    <li>Stock Sentiment Analysis System: Built a news-based sentiment model with Z-score anomaly detection to filter market noise.</li>
+    <li>Macro Trigger Logic (Ongoing): Detects systemic market events when multiple companies show significant price changes.</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <p>Python, R, AMPL, Financial Modeling, Risk Management, NLP, Machine Learning, Microsoft Excel, Microsoft Word</p>
+  <div class="skills-grid">
+    <img src="badges/python.png" alt="Python">
+    <img src="badges/r.png" alt="R">
+    <img src="badges/pandas.png" alt="Pandas">
+    <img src="badges/tensorflow.png" alt="TensorFlow">
+    <img src="badges/sql.png" alt="SQL">
   </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><img src="Lehigh_University_seal.png" class="badge" alt="Lehigh">Lehigh University — MFE, 2023–2025</li>
+    <li><img src="CTBU_logo.png" class="badge" alt="CTBU">Chongqing Technology and Business University — BBA in Finance, 2018–2022</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: zhangjunrong25@gmail.com</p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/junrong-zhang-55438a28a/" target="_blank">Junrong Zhang on LinkedIn</a></p>
+  <div class="btn-link"><a href="intro.mp4" target="_blank">🎬 Watch My Intro Video</a></div>
+  <div class="btn-link"><a href="resume.pdf" target="_blank">📄 View My Resume (PDF)</a></div>
+</section>
+
+<footer>
+  © 2024 Junrong Zhang. All rights reserved.
+</footer>
+
 </body>
 </html>
